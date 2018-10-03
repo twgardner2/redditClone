@@ -2,7 +2,7 @@ var links = [
     {  
         "text":"Google",
         "url":"https://www.google.com",
-        "votes":0
+        "votes":1
     },
     {  
         "text":"Yahoo!",
@@ -12,7 +12,7 @@ var links = [
     {  
         "text":"Bing",
         "url":"https://www.bing.com",
-        "votes":-10
+        "votes":-1
     }
 ]
 
@@ -22,14 +22,12 @@ function generateRow(linkText, linkURL, linkVotes) {
     newLink.classList.add('entryRow')
 
     var rowContents = 
-            `<div class="entryRow">` +
-                `<div class="arrows">` + 
-                    `<img src="img/uparrow.png" class="buttonUpVote">` +
-                    `<p class="voteCount">${linkVotes}</p>` +
-                    `<img src="img/downarrow.png" class="buttonDownVote">` +
-                `</div> ` +
-                `<div><a href="${linkURL}">${linkText}</a></div>` +
-            `</div>` ;
+            `<div class="arrows">` + 
+                `<img src="img/up_arrow.png" class="buttonUpVote">` +
+                `<p class="voteCount">${linkVotes}</p>` +
+                `<img src="img/down_arrow.png" class="buttonDownVote">` +
+            `</div> ` +
+            `<div><a href="${linkURL}">${linkText}</a></div>`;
 
     newLink.innerHTML = rowContents;
 
