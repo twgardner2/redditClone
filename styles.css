@@ -1,0 +1,30 @@
+body {
+    background: grey;
+}
+
+#banner {
+    color: white;
+    background: lightblue;
+    font-size: 24pt;
+    text-align: center;
+    width: 100vw;
+    height: 15vh;
+
+}
+
+.arrows img {
+    height: 30px;
+    width: 30px;
+}
+
+.entryRow {
+    margin: 5px;
+    background: tan;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
