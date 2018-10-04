@@ -25,7 +25,7 @@ body {
 .entryRow {
     height:60px;
     margin: 5px;
-    background: tan;
+    background: lightblue;
 
     display: flex;
     flex-direction: row;

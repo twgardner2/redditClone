@@ -111,9 +111,25 @@ function renderLinksList(links) {
 
 }
 
+function newLinkButtonHandler() {
+    var newLinkText = document.getElementById('newLinkText').value;
+    var newLinkURL = document.getElementById('newLinkURL').value;
 
+    var newLinkJSON = {
+        "text":newLinkText,
+        "url":newLinkURL,
+        "votes":0
+    }
+
+    links.push(newLinkJSON);
+
+    renderLinksList(links);
+
+}
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    document.getElementById('submitNewLink').addEventListener('click', newLinkButtonHandler);
 
     // Render links list
     renderLinksList(links);
